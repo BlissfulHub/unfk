@@ -1,0 +1,1015 @@
+*{
+    box-sizing: border-box;
+    padding: 1rem 2%;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.795);
+    width: 100%;
+    height: 50px;
+    align-items: center;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+li{
+    color: white;
+    font-size: 13px;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+li a{
+   text-decoration: none;
+   color: white;
+   transition: .3s;
+}
+li a:hover{
+    color: steelblue;
+}
+nav h1{
+    color: white;
+    font-size: 30px;
+    line-height: 15px;
+    transition: .3s;
+}
+nav h1:hover{
+    color: steelblue;
+}
+.hire button{
+    width: 130px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: .3s;
+}
+.hire button a{
+    color: black;
+    text-decoration: none;
+}
+.hire button a:hover{
+    color: white;
+    text-decoration: none;
+}
+.hire button:hover{
+    border: 1px solid white;
+    background: none;
+    color: white;
+}
+.hire{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.hire a{
+    text-decoration: none;
+    color: text;
+    transition: .3s;
+}
+.fa-facebook-f:hover {
+    color: steelblue;
+    border: 1px solid steelblue;
+}
+.fa-facebook-f{
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 9px;
+    font-size: 12px;
+}
+.fa-github-alt:hover {
+    color: steelblue;
+    border: 1px solid steelblue;
+}
+.fa-github-alt{
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 9px;
+    font-size: 12px;
+}
+.fa-instagram:hover {
+    color: steelblue;
+    border: 1px solid steelblue;
+}
+.fa-instagram{
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 9px;
+    font-size: 12px;
+}
+.fa-twitter{
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 12px;
+    transition: .3s;
+}
+.fa-twitter:hover {
+    color: steelblue;
+    border: 1px solid steelblue;
+}
+.fa-youtube{
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 12px;
+    transition: .3s;
+}
+.fa-youtube:hover {
+    color: steelblue;
+    border: 1px solid steelblue;
+}
+.btn{
+    background: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    width: 20px;
+}
+/* .btn:hover, .btn:focus{
+    color: ;
+} */
+.dropdown{
+    position: relative;
+    display: none;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: brown;
+    list-style-type: none;
+    width: 80px;
+    align-items: center;
+    text-align: center;
+    line-height: 28px;
+    overflow: hidden;
+    z-index: 5;
+}
+.show{display: block;}
+.home{
+    background-color: blue;
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(rgba(0,0,0,0.582),rgba(0, 0, 0, 0.897)), url("images (104).jpeg");
+    background-position: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.profile{
+    width: 400px;
+    height: 400px;
+}
+.profile img{
+    width: 300px;
+    height: 350px;
+}
+.home-content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 100px;
+}
+.home-text{
+    line-height: 50px;
+}
+.home-text h1{
+    font-size: 45px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.home-text p{
+    font-size: 12px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+.buttons{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+.buttons button{
+    width: 120px;
+    height: 28px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    border: none;
+    transition: .3s;
+}
+.buttons button a{
+    color: black;
+    text-decoration: none;
+}
+.buttons button a:hover{
+    color: white;
+}
+.buttons button:hover{
+    border: 1px solid white;
+    background: none;
+    color: white;
+}
+.about{
+    width: 100%;
+    height: 640px;
+    background-color: rgb(2, 31, 54);
+}
+.about-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 80px;
+    align-items: center;
+    gap: 130px;
+}
+.dis{
+    color: rgb(99, 2, 22);
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+.about-item h1{
+    margin-top: 10px;
+    color: white;
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+}
+.about-item h1 hr{
+    width: 90px;
+    border: 2px solid rgb(99, 2, 22);
+    margin-top: 5px;
+}
+.name{
+    color: white;
+    font-size: 14px;
+    font-family: arial;
+}
+.table{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid gainsboro;
+    padding: 15px;
+    line-height: 40px;
+    margin-top: 15px;
+}
+.about-item{
+    line-height: 30px;
+}
+.one{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    align-items: center;
+    margin-top: -300px;
+}
+.one p{
+    font-size: 40px;
+    color: gray;
+}
+.one hr{
+    width: 50px;
+    border: 2px solid rgba(99, 2, 21, 0.788);
+}
+.CV{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .3s;
+}
+.CV:hover{
+    color: white;
+    background: none;
+    border: 1px solid white;
+    transform: scale(1.05);
+}
+.service{
+    height: 500px;
+    width: 100%;
+    background-color: rgb(2, 36, 63);
+    padding: 0.5rem 4.5%;
+}
+.service-page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 95px;
+    align-items: center;
+    padding-top: 80px;
+}
+.two{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    align-items: center;
+    margin-top: -200px;
+}
+.two p{
+    font-size: 40px;
+    color: gray;
+}
+.two hr{
+    width: 50px;
+    border: 2px solid rgba(99, 2, 21, 0.788);
+}
+.works-column{
+    display: flex;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+.cover h1{
+    margin-top: 10px;
+    color: white;
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+}
+.cover h1 hr{
+    width: 50px;
+    border: 2px solid rgb(99, 2, 22);
+    margin-top: 5px;
+}
+.copy{
+    color: white;
+    font-size: 14px;
+    border: 1px solid grey;
+    padding: 16px;
+    line-height: 30px;
+    font-family: arial;
+}
+.fa-receipt{
+    font-size: 35px;
+    color: gainsboro;
+}
+.copy h2{
+    font-size: 25px;
+}
+.copy{
+    color: white;
+    font-size: 14px;
+    border: 1px solid grey;
+    padding: 16px;
+    line-height: 33px;
+    font-family: arial;
+    transition: .3s;
+}
+.fa-receipt{
+    font-size: 35px;
+    color: gainsboro;
+}
+.copy h2{
+    font-size: 25px;
+}
+.copy p{
+    color: white;
+    font-size: 13px;
+    font-family: arial;
+}
+.copy:hover{
+    background-color: rgb(34, 38, 41);
+    transform: scale(1.04);
+    border: 1px solid rgb(12, 106, 184);
+}
+.dev{
+    color: white;
+    font-size: 14px;
+    border: 1px solid grey;
+    padding: 16px;
+    line-height: 33px;
+    font-family: arial;
+    transition: .3s;
+}
+.fa-tools{
+    font-size: 35px;
+    color: gainsboro;
+}
+.dev h2{
+    font-size: 25px;
+}
+.dev p{
+    color: white;
+    font-size: 13px;
+    font-family: arial;
+}
+.dev:hover{
+    background-color: rgb(34, 38, 41);
+    transform: scale(1.04);
+    border: 1px solid rgb(12, 106, 184);
+}
+.market{
+    color: white;
+    font-size: 14px;
+    border: 1px solid grey;
+    padding: 16px;
+    line-height: 33px;
+    font-family: arial;
+    transition: .3s;
+}
+.fa-user-friends{
+    font-size: 35px;
+    color: gainsboro;
+}
+.market h2{
+    font-size: 25px;
+}
+.market p{
+    color: white;
+    font-size: 13px;
+    font-family: arial;
+}
+.market:hover{
+    background-color: rgb(34, 38, 41);
+    transform: scale(1.04);
+    border: 1px solid rgb(12, 106, 184);
+}
+.project{
+    width: 100%;
+    height: 840px;
+    background-color: rgb(0, 41, 75);
+    padding: 0.5rem 2%;
+}
+.project-page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 950px;
+    align-items: center;
+    padding-top: 80px;
+}
+.three{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    align-items: center;
+}
+.three p{
+    font-size: 40px;
+    color: gray;
+}
+.three hr{
+    width: 50px;
+    border: 2px solid rgba(99, 2, 21, 0.788);
+}
+.project-content{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 1rem 4%;
+}
+.project-one{
+    width: 450px;
+    height: 380px;
+    background-color: rgba(0, 0, 0, 0.459);
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    transition: .3s;
+}
+.project-one:hover{
+    background-color: rgba(0, 0, 0, 0.795);
+    transform: scale(1.03);
+}
+.project-one img{
+    width: 400px;
+    height: 300px;
+}
+.project-itemone{
+    gap: 50px;
+    width: 330px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.459);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    transition: .3s;
+}
+.project-itemone:hover{
+    background-color: rgba(0, 0, 0, 0.795);
+    transform: scale(1.03);
+}
+.project-itemone img{
+    width: 300px;
+    height: 200px;
+}
+.project-itemtwo{
+    width: 400px;
+    height: 300px;
+    margin-top: 50px;
+    width: 330px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.459);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    transition: .3s;
+}
+.project-itemtwo:hover{
+    background-color: rgba(0, 0, 0, 0.795);
+    transform: scale(1.03);
+}
+.project-itemtwo img{
+    width: 300px;
+    height: 200px;
+}
+.item-one{
+    display: flex;
+    gap: 40px;
+}
+.all{
+    text-align: right;
+    font-size: 13px;
+    color: white;
+    padding-top: 15px;
+}
+.all:hover{
+    color: rgb(12, 106, 184);
+}
+.see{
+    text-align: right;
+    font-size: 13px;
+    color: white;
+    padding-top: 5px;
+}
+.see:hover{
+    color: rgb(12, 106, 184);
+}
+.meet{
+    background-color: rgb(12, 106, 184);
+    height: 300px;
+    width: 100%;
+    background-image: linear-gradient(rgba(2, 20, 36, 0.651),rgba(1, 23, 41, 0.884)),url("about\ \(2\).jpg");
+    background-position: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    border-top: 1px solid rgb(70, 69, 69);
+    border-bottom: 1px solid rgb(70, 69, 69);
+}
+.meet-page{
+    font-size: 12px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+}
+.meet-content h1{
+    color: white;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.meet-content{
+    align-items: center;
+    padding: 2rem 8%;
+    line-height: 40px;
+}
+.certificate{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(0, 51, 94);
+}
+.certi-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 50px;
+}
+.paper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    line-height: 35px;
+}
+.four{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    align-items: center;
+}
+.four p{
+    font-size: 40px;
+    color: gray;
+}
+.four hr{
+    width: 50px;
+    border: 2px solid rgba(99, 2, 21, 0.788);
+}
+.certi-page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 450px;
+    align-items: center;
+    padding-top: 80px;
+}
+.fa-book-open{
+    font-size: 45px;
+    color: gainsboro;
+}
+.fa-book{
+    font-size: 45px;
+    color: gainsboro;
+}
+.fa-graduation-cap{
+    font-size: 45px;
+    color: gainsboro;
+}
+.paper h1{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+.paper h3{
+    color: gray;
+    font-family: tahoma;
+}
+.certi-item p{
+    color: gainsboro;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 25px;
+    font-size: 13px;
+}
+.certi-item{
+    border: 1px solid gainsboro;
+    padding: 25px;
+    border-radius: 10px;
+    transition: .3s;
+    box-shadow: 2px 2px 4px gray;
+}
+.certi-item:hover{
+    border: 1px solid rgb(99, 2, 22);
+    transform: scale(1.05);
+    box-shadow: 2px 2px 4px gray;
+    background-color: rgba(0, 0, 0, 0.459);
+}
+.footer{
+    width: 100%;
+    height: 300px;
+    background-image:  linear-gradient(rgb(0, 13, 36),rgba(2, 12, 43, 0.747)),url("images\ \(104\).jpeg");
+    background-position: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    border-top: 1px solid rgb(70, 69, 69);
+    border-bottom: 1px solid rgb(70, 69, 69);
+    border-top: 1px solid rgb(70, 69, 69);
+    box-shadow: 2px 2px 2px gray;
+}
+.foot-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    align-items: center;
+}
+.phone{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    color: rgb(139, 138, 138);
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.mail-two{
+    line-height: 40px;
+}
+.mail-two p{
+    color: rgb(139, 138, 138);
+    font-size: 14px;
+}
+.foot-item h1{
+    transition: .3s;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(175, 2, 36);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.foot-item h1:hover{
+    color: rgb(139, 138, 138);
+}
+.TI{
+    color: rgb(139, 138, 138);
+    line-height: 25px;
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.foot-item{
+    line-height: 30px;
+}
+.socials{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.foot-item h3{
+    color: rgb(139, 138, 138);
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.foot-item h3 hr{
+    width: 50px;
+    border: 1px solid rgb(136, 0, 27);
+}
+.news{
+    color: rgb(139, 138, 138);
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.fa-phone{
+    font-size: 16px;
+}
+.fa-envelope{
+    font-size: 16px;
+}
+.fa-map-marker-alt{
+    font-size: 16px;
+}
+.Enter{
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: .3s;
+    background-color: rgb(136, 0, 27);
+    color: white;
+}
+.Enter:hover{
+    border: 1px solid white;
+    background: none;
+    color: white;
+}
+.copyright{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.459);
+    width: 100%;
+    height: 30px;
+    margin-top: 30px;
+    align-items: center;
+}
+.copyright p{
+    color: rgb(153, 148, 148);
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 8px;
+}
+
+@media screen and (max-width:400px) {
+    ul{
+        display: none;
+    }
+    .dropdown{
+        display: block;
+    }
+    .hire{
+        display: none;
+    }
+    nav{
+        justify-content: center;
+        gap: 150px;
+    }
+    .profile{
+        display: none;
+    }
+    .home{
+        height: 450px;
+    }
+    .home-content{
+        padding-top: 150px;
+        justify-content: center;
+    }
+    .home-text{
+        line-height: 60px;
+    }
+    .home-text h1{
+        font-size: 35px;
+       line-height: 40px;
+    }
+    .home-text p{
+        font-size: 12px;
+    }
+    .about{
+        height: 640px;
+        padding: 1rem;
+    }
+    .about-content{
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        gap: 80px;
+        margin: auto;
+    }
+    .dis{
+        font-size: 12px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .about-item h1{
+        font-size: 25px;
+    }
+    .about-item h1 hr{
+        width: 45px;
+    }
+    .name{
+        font-size: 13.2px;
+        text-align: left;
+    }
+    .names{
+        font-size: 11px;
+        text-align: left;
+        color: white;
+    }
+
+    .table{
+        padding: 6.5px;
+    }
+    .one{
+        display:none;
+    }
+    .CV{
+        margin-top: 25px;
+    }
+    .project-content{
+        display: block;
+        flex-wrap: wrap;
+    }
+    .item-one{
+        display: block;
+        flex-wrap: wrap;
+    }
+    nav h1{
+        font-size: 20px;
+    }
+    .service{
+        height: 1110px;
+    }
+    .service-page{
+        padding-top: 40px;
+    }
+    .two{
+        display: none;
+    }
+    .works-column{
+        margin-top: 30px;
+    }
+    .cover h1{
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .cover h1 hr{
+        width: 35px;
+    }
+    .copy{
+        font-size: 14px;
+        padding: 25px;
+        line-height: 40px;
+    }
+    .fa-receipt{
+        font-size: 35px;
+    }
+    .copy h2{
+        font-size: 20px;
+    }
+    .dev{
+        font-size: 14px;
+        padding: 25px;
+        line-height: 40px;
+    }
+    .fa-tools{
+        font-size: 35px;
+    }
+    .dev h2{
+        font-size: 20px;
+    }
+    .market{
+        font-size: 14px;
+        padding: 25px;
+        line-height: 40px;
+    }
+    .fa-user-friends{
+        font-size: 35px;
+    }
+    .market h2{
+        font-size: 20px;
+    }
+    .project{
+        width: 100%;
+        height: 1580px;
+        background-color: rgb(0, 41, 75);
+        padding: 0.5rem 4%;
+    }
+    .project-page{
+        justify-content: left;
+        gap: 100px;
+        padding-top: 40px;
+    }
+    .three{
+        display: none;
+    }
+    .project-content{
+        gap: 10px;
+        padding: 1rem 4%;
+    }
+    .project-one{
+        width: 330px;
+        height: 250px;
+        padding: 15px;
+        margin-top: 20px;
+    }
+    .project-one img{
+        width: 300px;
+        height: 200px;
+    }
+    .project-itemone{
+        margin-top: 20px;
+    }
+    .project-itemtwo{
+        margin-top: 20px;
+    }
+    .all{
+        padding-top: 5px;
+    }
+    .meet-content h1{
+        font-size: 22px;
+    }
+    .certificate{
+        height: 870px;
+        padding: 1rem 2%;
+        padding-top: -150px; 
+    }
+    .certi-page{
+        padding-top: 40px;
+    }
+    .four{
+        display: none;
+    }
+    .certi-content{
+        display: block;
+        margin-top: -20px;
+    }
+    .certi-item{
+        padding: 15px;
+        margin-top: 40px;
+    }
+    .footer{
+        height: 700px;
+    }
+    .foot-item h1{
+        text-align: center;
+    }
+    .foot-item h3{
+        text-align: center;
+    }
+    .foot-item h3 hr{
+        display: none;
+    }
+    .TI{
+        text-align: center;
+    }
+    .mail-two p{
+        text-align: center;
+    }
+    .foot-item{
+        margin-top: 30px;
+    }
+    .news{
+        text-align: center;
+    }
+    .Enter{
+        width: 100px;
+        font-size: 8px;
+        height: 25px;
+    }
+}

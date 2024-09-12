@@ -1,0 +1,395 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-weight: bolder;
+}
+body{
+    background-color: rgba(24, 23, 23, 0.616);
+    padding: 0;
+    margin: 0;
+}
+nav{
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 150px;
+    width: 100%;
+    z-index: 15;
+    background-color: black;
+}
+.unfk{
+    color: rgb(176, 238, 7);
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px whitesmoke;
+}
+.unfked{
+    color: rgb(176, 238, 7);
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0.5px 0.5px whitesmoke;
+}
+ul{
+    list-style-type: none;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 11px;
+}
+li{
+    font-size: 8px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+li a{
+    color: white;
+    text-decoration: none;
+}
+li a:hover{
+    color: rgb(176, 238, 7);
+    text-decoration: underline;
+    font-weight: 900;
+    font-size: 9px;
+}
+.fa-bars{
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 0px;
+}
+.fa-bars:hover{
+    color: rgb(176, 238, 7);
+}
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+.dropdown-content{
+    display: none;
+    background-color: rgba(15, 15, 15, 0.678);
+    padding: 15px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 15px;
+    position: absolute;
+    left: -300%;
+    width: 100px;
+    overflow: auto;
+    z-index: 1;
+}
+.dropdown-content li{
+    list-style-type: none;
+}
+.show {display: block;}
+.home{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(15, 15, 15, 0.678);
+}
+.slider{
+    width: 350px;
+    height: 250px;
+    border-radius: 15px;
+    padding-top: 60px;
+    overflow: hidden;
+    padding: 0.3rem;
+}
+.slide{
+    width: 400%;
+    height: 300px;
+    display: flex;
+}
+.slide input{
+    display: none;
+}
+.st{
+    width: 300px;
+    transition: 2s;
+}
+.st img{
+    width: 280px;
+    height: 200px;
+    border-radius: 10px;
+}
+.nav-m{
+    position: absolute;
+    width: 200px;
+    margin-top: -80px;
+    justify-content: right;
+    display: flex;
+}
+.m-btn{
+    border: 2px solid gray;
+    padding: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.m-btn:not(:last-child){
+    margin-right: 20px;
+}
+.m-btn:hover{
+    background-color: black;
+}
+#radio1:checked ~.first{
+    margin-left: 0;
+}
+#radio2:checked ~.first{
+    margin-left: -20%;
+}
+#radio3:checked ~.first{
+    margin-left: -40%;
+}
+.nav-auto{
+    position: absolute;
+    width: 200px;
+    display: flex;
+    justify-content: right;
+    margin-top: 220px;
+}
+.nav-auto div{
+    border: 2px solid gray;
+    padding: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.nav-auto div:not(:last-child){
+    margin-right: 20px;
+    justify-content: right;
+}
+#radio1:checked ~ .nav-auto .a-b1{
+    background-color: black;
+}
+#radio2:checked ~ .nav-auto .a-b2{
+    background-color: black;
+}
+#radio3:checked ~ .nav-auto .a-b3{
+    background-color: black;
+}
+.about{
+    background-color: rgba(26, 25, 25, 0.836);
+    height: 420px;
+    padding: 1rem 2%;
+    border-top: 1px solid gainsboro;
+}
+.content h1{
+    color: rgb(175, 247, 8);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+.pager{
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+    align-items: center;
+}
+.pager hr{
+    width: 30px;
+    border: 1px solid white;
+}
+.name{
+    color: gray;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 30px;
+    margin-top: -30px;
+}
+.name a{
+    color: gray;
+}
+.team{
+    background-color: rgba(22, 21, 21, 0.774);
+    height: 920px;
+    padding: 1rem 2%;
+    border-top: 1px solid gainsboro;
+}
+.team-content h1{
+    color: rgb(175, 247, 8);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+.team-pic{
+    height: 150px;
+    text-align: center;
+    margin-top: 30px;
+}
+.team-pic img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+.team-pic p{
+    color: rgb(143, 140, 140);
+    font-size: 11px;
+}
+.team-item{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top:-20px ;
+}
+.event{
+    background-color: rgba(15, 15, 15, 0.678);
+    height: 740px;
+    padding: 1rem 2%;
+    border-top: 1px solid gainsboro;
+}
+.event-content h1{
+    color: rgb(175, 247, 8);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+.event-content{
+    text-align: center;
+}
+.event-content img{
+    width: 350px;
+    height: 300px;
+}
+.event-text{
+    color: gray;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 30px;
+}
+.patner-text{
+    color: gray;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 30px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+.patners{
+    background-color: rgba(15, 15, 15, 0.678);
+    height: 790px;
+    padding: 1rem 2%;
+    border-top: 1px solid gainsboro;
+}
+.patners h1{
+    color: rgb(176, 238, 7);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+.teams-pic{
+    height: 150px;
+    text-align: center;
+    margin-top: 30px;
+}
+.teams-pic img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+.teams-pic p{
+    margin-top: 10px;
+    color: rgb(143, 140, 140);
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+}
+.buzz{
+    color: rgb(143, 140, 140);
+    margin-top: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 13px;
+}
+.footer{
+    background-color: rgba(15, 15, 15, 0.808);
+    height: 170px;
+    border-top: 1px solid rgba(118, 119, 119, 0.411);
+}
+.logos{
+    width: 220px;
+    height: 60px;
+    text-align: center;
+}
+.logos img{
+    width: 80px;
+    height: 60px;
+}
+.word{
+    font-size: 10px;
+    color: rgba(100, 97, 97, 0.678);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 15px;
+    margin-top: -10px;
+}
+.social{
+    color: rgba(150, 148, 148, 0.932);
+    /* display: flex;
+    flex-wrap: wrap; */
+    gap: 25px;
+    text-align: center;
+    padding-top: 30px;
+}
+.social p{
+    color: rgba(150, 148, 148, 0.932);
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 25px;
+}
+.Us{
+    color: rgba(180, 176, 176, 0.678);
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 15px;
+}
+.foot-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 15px;
+}
+.copy{
+    background-color: rgba(114, 110, 110, 0.404);
+    font-size: 11px;
+    color: gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 12px;
+}
+@media (min-width:768px){
+    nav{
+        gap: 300px;
+    }
+    .event{
+        height: 670px;
+    }
+    .team-item{
+        width: 500px;
+        position: relative;
+        left: 100px;
+    }
+    .team{
+        height: 700px;
+    }
+    .patners{
+        height: 600px;
+    }
+    .foot-content{
+        gap: 300px;
+        margin-top: 10px;
+    }
+}
